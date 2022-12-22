@@ -1,0 +1,78 @@
+node-union-value (2.0.1-3) unstable; urgency=medium
+
+  * Team upload
+
+  [ Debian Janitor ]
+  * Set upstream metadata fields: Bug-Submit.
+  * Remove obsolete fields Contact, Name from debian/upstream/metadata
+    (already present in machine-readable debian/copyright).
+  * Remove constraints unnecessary since buster:
+    + Build-Depends: Drop versioned constraint on node-get-value and
+      node-set-value
+    + node-union-value: Drop versioned constraint on node-get-value in Depends
+
+  [ Yadd ]
+  * Bump debhelper compatibility level to 13
+  * Modernize debian/watch
+  * Fix GitHub tags regex
+  * Use dh-sequence-nodejs instead of pkg-js-tools
+  * Update standards version to 4.6.0, no changes needed.
+
+ -- Yadd <yadd@debian.org>  Wed, 06 Oct 2021 18:34:22 +0200
+
+node-union-value (2.0.1-2) unstable; urgency=medium
+
+  * Team upload
+  * Back to unstable after successful tests
+
+ -- Xavier Guimard <yadd@debian.org>  Tue, 19 Nov 2019 18:38:29 +0100
+
+node-union-value (2.0.1-1) experimental; urgency=medium
+
+  * Team upload
+  * Bump debhelper compatibility level to 12
+  * Declare compliance with policy 4.4.1
+  * Add debian/gbp.conf
+  * New upstream version 2.0.1
+  * Update dependencies
+  * Switch test and install to pkg-js-tools
+
+ -- Xavier Guimard <yadd@debian.org>  Sun, 20 Oct 2019 11:05:51 +0200
+
+node-union-value (2.0.0-1) unstable; urgency=medium
+
+  * Team upload
+  * New upstream version 2.0.0
+  * Fix autopkgtest files to test installed files
+  * Update debian/copyright
+
+ -- Xavier Guimard <yadd@debian.org>  Tue, 22 Jan 2019 15:19:07 +0100
+
+node-union-value (1.0.0-2) unstable; urgency=medium
+
+  * Team upload
+
+  [ Jelmer Vernooĳ ]
+  * Use secure copyright file specification URI.
+
+  [ Xavier Guimard ]
+  * Remove useless dependency versions. Fixes debci
+  * Bump debhelper compatibility level to 11
+  * Declare compliance with policy 4.3.0
+  * Update VCS fields to salsa
+  * Add upstream/metadata
+  * Ignore test if nocheck is set
+
+ -- Xavier Guimard <yadd@debian.org>  Tue, 22 Jan 2019 14:10:20 +0100
+
+node-union-value (1.0.0-1) unstable; urgency=medium
+
+  * New upstream release
+
+ -- Pirate Praveen <praveen@debian.org>  Thu, 11 Jan 2018 19:31:36 +0530
+
+node-union-value (0.2.3-1) unstable; urgency=low
+
+  * Initial release (Closes: #842328)
+
+ -- Pirate Praveen <praveen@debian.org>  Fri, 28 Oct 2016 12:39:11 +0530

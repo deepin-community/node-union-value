@@ -1,0 +1,30 @@
+Source: node-union-value
+Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
+Uploaders: Pirate Praveen <praveen@debian.org>
+Section: javascript
+Testsuite: autopkgtest-pkg-nodejs
+Priority: optional
+Build-Depends: debhelper-compat (= 13),
+               nodejs,
+               mocha <!nocheck>,
+               node-should <!nocheck>,
+               node-set-value <!nocheck>,
+               node-get-value <!nocheck>,
+               dh-sequence-nodejs
+Standards-Version: 4.6.0
+Vcs-Browser: https://salsa.debian.org/js-team/node-union-value
+Vcs-Git: https://salsa.debian.org/js-team/node-union-value.git
+Homepage: https://github.com/jonschlinkert/union-value
+Rules-Requires-Root: no
+
+Package: node-union-value
+Architecture: all
+Depends: ${misc:Depends},
+         nodejs,
+         node-set-value (>= 3.0.1),
+         node-get-value
+Description: set an array of unique values as the property of an object
+ This library supports setting deeply nested properties using object-paths/dot
+ notation.
+ .
+ Node.js is an event-based server-side JavaScript engine.

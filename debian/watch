@@ -1,0 +1,5 @@
+version=4
+opts=\
+dversionmangle=auto,\
+filenamemangle=s/.*\/v?([\d\.-]+)\.tar\.gz/node-union-value-$1.tar.gz/ \
+ https://github.com/jonschlinkert/union-value/tags .*/archive/.*/v?([\d\.]+).tar.gz
